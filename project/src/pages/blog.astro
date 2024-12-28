@@ -1,0 +1,100 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Blog - Coding with Eric">
+	<main>
+		<h1>Learning <span class="text-gradient">Resources</span></h1>
+		<div class="blog-grid">
+			<article class="blog-post">
+				<h2>Getting Started with Python</h2>
+				<p class="date">Dec 31, 2024</p>
+				<p class="excerpt">
+					Learn how to set up Python on your computer and write your first program.
+					Perfect for beginners!
+				</p>
+				<a href="/blog/getting-started-with-python" class="read-more">Read More →</a>
+			</article>
+
+			<article class="blog-post">
+				<h2>Fun Python Projects for Kids</h2>
+				<p class="date">Dec 11, 2024</p>
+				<p class="excerpt">
+					Discover exciting Python projects that will keep your child engaged while learning
+					programming concepts.
+				</p>
+				<a href="/blog/fun-python-projects" class="read-more">Read More →</a>
+			</article>
+
+			<article class="blog-post">
+				<h2>Why Should Kids Learn Python?</h2>
+				<p class="date">Nov 25, 2024</p>
+				<p class="excerpt">
+					Explore the benefits of teaching Python to children and how it can help their
+					future career prospects.
+				</p>
+				<a href="/blog/why-learn-python" class="read-more">Read More →</a>
+			</article>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.blog-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+	.blog-post {
+		background: rgba(255, 255, 255, 0.1);
+		padding: 2rem;
+		border-radius: 8px;
+		transition: transform 0.2s;
+	}
+	.blog-post:hover {
+		transform: translateY(-5px);
+	}
+	.blog-post h2 {
+		color: rgb(var(--accent-light));
+		margin: 0;
+	}
+	.date {
+		color: rgba(255, 255, 255, 0.7);
+		font-size: 0.9em;
+		margin: 0.5rem 0;
+	}
+	.read-more {
+		display: inline-block;
+		color: rgb(var(--accent-light));
+		text-decoration: none;
+		margin-top: 1rem;
+		transition: color 0.2s;
+	}
+	.read-more:hover {
+		color: white;
+	}
+</style>

@@ -1,0 +1,106 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Courses - Coding with Eric">
+	<main>
+		<h1>Python <span class="text-gradient">Courses</span></h1>
+		<div class="courses-grid">
+			<div class="course-card">
+				<h2>Python Beginners</h2>
+				<p class="age">Ages 8-12</p>
+				<p class="description">
+					A gentle introduction to Python programming through fun projects and games.
+					Perfect for children with no prior coding experience.
+				</p>
+				<ul class="features">
+					<li>Basic programming concepts</li>
+					<li>Simple game development</li>
+					<li>Interactive learning</li>
+					<li>8-week course</li>
+				</ul>
+				<a href="/courses/python-beginners" class="learn-more">View Course Details →</a>
+			</div>
+
+			<div class="course-card">
+				<h2>Python Intermediate</h2>
+				<p class="age">Ages 10-14</p>
+				<p class="description">
+					Build on basic Python knowledge with more complex projects and programming concepts.
+				</p>
+				<ul class="features">
+					<li>Advanced programming concepts</li>
+					<li>Project-based learning</li>
+					<li>Problem-solving challenges</li>
+					<li>10-week course</li>
+				</ul>
+				<a href="/courses/python-intermediate" class="learn-more">View Course Details →</a>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.courses-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+	.course-card {
+		background: rgba(255, 255, 255, 0.1);
+		padding: 2rem;
+		border-radius: 8px;
+		transition: transform 0.2s;
+	}
+	.course-card:hover {
+		transform: translateY(-5px);
+	}
+	.course-card h2 {
+		color: rgb(var(--accent-light));
+		margin: 0;
+	}
+	.age {
+		color: rgba(255, 255, 255, 0.7);
+		font-size: 0.9em;
+		margin: 0.5rem 0;
+	}
+	.features {
+		margin-left: 1.5rem;
+		margin-top: 1rem;
+	}
+	.learn-more {
+		display: inline-block;
+		color: rgb(var(--accent-light));
+		text-decoration: none;
+		margin-top: 1rem;
+		padding: 0.5rem 0;
+		transition: color 0.2s;
+	}
+	.learn-more:hover {
+		color: white;
+	}
+</style>

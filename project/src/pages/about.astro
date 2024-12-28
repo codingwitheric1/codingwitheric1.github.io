@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About - Coding with Eric">
+	<main>
+		<h1>About <span class="text-gradient">Eric</span></h1>
+		<div class="content">
+			<p>
+				Hello! I'm Eric, a passionate coding educator dedicated to teaching Python programming
+				to children. With years of experience in both programming and education, I've developed
+				a unique teaching approach that makes coding fun and accessible for young minds.
+			</p>
+			
+			<h2>Teaching Philosophy</h2>
+			<p>
+				I believe that every child can learn to code. My teaching methodology focuses on:
+			</p>
+			<ul>
+				<li>Hands-on learning through interactive projects</li>
+				<li>Building confidence through achievable challenges</li>
+				<li>Fostering creativity and problem-solving skills</li>
+				<li>Creating a supportive and engaging learning environment</li>
+			</ul>
+
+			<h2>Experience</h2>
+			<p>
+				With years of experience teaching Python, I've inspired countless children to unlock their 
+				creativity through coding. My courses are tailored to each child's unique learning pace, 
+				making programming not just a skill but a fun and empowering journey toward becoming 
+				confident problem-solvers.
+			</p>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.content {
+		background: rgba(255, 255, 255, 0.1);
+		padding: 2rem;
+		border-radius: 8px;
+	}
+	h2 {
+		color: rgb(var(--accent-light));
+		margin-top: 2rem;
+	}
+	ul {
+		margin-left: 2rem;
+	}
+</style>

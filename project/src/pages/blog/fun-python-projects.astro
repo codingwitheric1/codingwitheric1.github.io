@@ -1,0 +1,57 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogStyles from '../../components/BlogStyles.astro';
+---
+
+<Layout title="Fun Python Projects for Kids - Coding with Eric">
+    <BlogStyles />
+    <main>
+        <h1 class="blog-title">Fun Python <span class="text-gradient">Projects</span> for Kids</h1>
+        <div class="blog-content">
+            <div class="blog-section">
+                <p>Are you ready to turn your imagination into real, working programs? With Fun Python Projects for Kids, you'll learn how to code while building cool games, solving exciting challenges, and making creative programs—all designed just for you!</p>
+            </div>
+
+            <div class="blog-section">
+                <h3>Create Games You'll Love</h3>
+                <p>Build your own version of Rock-Paper-Scissors, design a number guessing game, or even code a fun text adventure. Your ideas, your rules!</p>
+            </div>
+
+            <div class="blog-section">
+                <h3>Learn Through Play</h3>
+                <p>Coding doesn't have to be boring. Our hands-on projects make learning feel like a game as you unlock new skills step by step.</p>
+            </div>
+
+            <div class="blog-section">
+                <h3>No Experience? No Problem!</h3>
+                <p>Whether you've coded before or are starting fresh, we'll guide you through every line of code in a way that's easy and fun.</p>
+            </div>
+
+            <div class="blog-section">
+                <h3>Become a Young Programmer</h3>
+                <p>By the end of our sessions, you'll be amazed at what you can create and ready to show off your projects to family and friends!</p>
+            </div>
+
+            <div class="blog-section">
+                <p>Let's turn curiosity into confidence—join Fun Python Projects for Kids today and discover the magic of programming!</p>
+            </div>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    main {
+        margin: auto;
+        padding: 1rem;
+        color: white;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+    }
+</style>

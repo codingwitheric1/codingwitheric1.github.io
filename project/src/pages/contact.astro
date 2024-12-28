@@ -1,0 +1,101 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact - Coding with Eric">
+	<main>
+		<h1>Get in <span class="text-gradient">Touch</span></h1>
+		<div class="contact-container">
+			<p class="intro">
+				Have questions about our Python courses? Want to start your child's coding journey?
+				I'm here to help!
+			</p>
+			
+			<div class="contact-methods">
+				<div class="method space-y-8">
+					<div>
+						<h2 class="text-xl font-semibold text-gray-800 mb-4">Ready to Start?</h2>
+						<a
+							href="https://forms.gle/Th7LeXo9uzUP7PvD9"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="join-btn inline-flex items-center px-6 py-3 text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
+						>
+							Join Today
+						</a>
+					</div>
+
+					<div class="border-t border-gray-200 pt-8">
+						<h2 class="text-xl font-semibold text-gray-800 mb-4">Have Questions?</h2>
+						<div class="flex items-center space-x-2 text-gray-600">
+
+							<a 
+								href="mailto:codingwitheric1@gmail.com"
+								class="text-blue-600 hover:text-blue-800 transition-colors duration-200"
+							>
+								codingwitheric1@gmail.com
+							</a>
+						</div>
+						<p class="mt-4 text-gray-600">
+							Feel free to reach out with any questions or concerns. We're here to help!
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	/* Set the background color of the entire page */
+	html, body {
+		background-color: #000; /* Black background */
+		color: #fff; /* White text for better contrast */
+		font-family: Arial, sans-serif; /* Font choice for better readability */
+	}
+
+	.text-gradient {
+		background: linear-gradient(to right, #4caf50, #2196f3);
+		-webkit-background-clip: text;
+		color: transparent;
+	}
+
+	.contact-container {
+		padding: 1rem;
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.intro {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+		color: #ddd; /* Slightly lighter text for better contrast */
+	}
+
+	/* Style for the "Join Today" button */
+	.join-btn {
+		font-size: 1.5rem; /* Font size */
+		padding: 12px 24px; /* Button padding */
+		background-color: #1d4ed8; /* Blue background */
+		border-radius: 8px; /* Rounded corners */
+		color: white; /* White text */
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+	}
+
+	.join-btn:hover {
+		background-color: #2563eb; /* Darker blue on hover */
+	}
+
+	/* Add specific styling for buttons and links on a black background */
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	a:hover {
+		color: #ff9800; /* Highlight link on hover */
+	}
+</style>

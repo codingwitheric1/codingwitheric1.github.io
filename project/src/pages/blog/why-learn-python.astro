@@ -1,0 +1,62 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogStyles from '../../components/BlogStyles.astro';
+---
+
+<Layout title="Why Should Kids Learn Python? - Coding with Eric">
+    <BlogStyles />
+    <main>
+        <h1 class="blog-title">Why Should Kids Learn <span class="text-gradient">Python</span>?</h1>
+        <div class="blog-content">
+            <div class="blog-section">
+                <p>Did you know Python is like a superpower that helps you bring your coolest ideas to life? It's not just for grown-ups—<strong>Python is perfect for kids, too!</strong> Here's why YOU should give it a try:</p>
+            </div>
+
+            <div class="blog-section">
+                <h3>Turn Play Into Creation</h3>
+                <p>Love games and apps? With Python, you can create your own! Imagine coding a game where YOU set the rules. How cool is that?</p>
+            </div>
+
+            <div class="blog-section">
+                <h3>Boost Your Brain Power</h3>
+                <p>Python helps you think like a problem-solver. It's like a workout for your brain that makes you smarter and more creative every day.</p>
+            </div>
+
+            <div class="blog-section">
+                <h3>It's Easy and Fun</h3>
+                <p>Python is one of the friendliest coding languages. Its simple style means you'll be writing real programs in no time—even if you've never coded before!</p>
+            </div>
+
+            <div class="blog-section">
+                <h3>Skills for the Future</h3>
+                <p>Coding is like learning a new language that opens doors to exciting careers, amazing inventions, and opportunities to change the world.</p>
+            </div>
+
+            <div class="blog-section">
+                <h3>Unleash Your Imagination</h3>
+                <p>Python isn't just about coding; it's about creating. Whether it's a game, a robot, or a project to wow your friends, the possibilities are endless!</p>
+            </div>
+
+            <div class="blog-section">
+                <p>Why wait? Dive into Python and see just how powerful and fun coding can be. The future is yours to create—one line of Python at a time!</p>
+            </div>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    main {
+        margin: auto;
+        padding: 1rem;
+        color: white;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+    }
+</style>

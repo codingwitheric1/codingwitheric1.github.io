@@ -1,0 +1,157 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Python Beginners Course - Coding with Eric">
+	<main>
+		<h1>Python <span class="text-gradient">Beginners</span></h1>
+		<div class="course-content">
+			<h2>8-Week Python Course Outline</h2>
+			
+			<div class="week-grid">
+				<div class="week-card">
+					<h3>Week 1: Introduction to Python and Programming Basics</h3>
+					<ul>
+						<li>What is programming?</li>
+						<li>Setting up Python (installing and using Python IDEs)</li>
+						<li>Writing your first Python code: "Hello, World!"</li>
+						<li>Basic concepts: variables, input/output, and simple arithmetic</li>
+						<li>Mini-project: Create a personalized greeting program</li>
+					</ul>
+				</div>
+
+				<div class="week-card">
+					<h3>Week 2: Understanding Data Types and Operations</h3>
+					<ul>
+						<li>Exploring data types: integers, floats, strings, and booleans</li>
+						<li>Working with operators (arithmetic, comparison, and logical)</li>
+						<li>String manipulation basics</li>
+						<li>Mini-project: Build a fun math quiz game</li>
+					</ul>
+				</div>
+
+				<div class="week-card">
+					<h3>Week 3: Control Flow with Conditional Statements</h3>
+					<ul>
+						<li>If, elif, and else statements</li>
+						<li>Understanding and applying logical operators</li>
+						<li>Mini-project: Create a simple "Guess the Number" game</li>
+					</ul>
+				</div>
+
+				<div class="week-card">
+					<h3>Week 4: Looping Fun – For and While Loops</h3>
+					<ul>
+						<li>How and when to use for and while loops</li>
+						<li>Nested loops and loop control (break, continue)</li>
+						<li>Mini-project: Design a simple countdown timer or number guessing game</li>
+					</ul>
+				</div>
+
+				<div class="week-card">
+					<h3>Week 5: Functions – Reusable Code</h3>
+					<ul>
+						<li>Why use functions?</li>
+						<li>Writing and calling functions</li>
+						<li>Parameters and return values</li>
+						<li>Mini-project: Create a calculator using functions</li>
+					</ul>
+				</div>
+
+				<div class="week-card">
+					<h3>Week 6: Working with Lists and Dictionaries</h3>
+					<ul>
+						<li>Introduction to lists and dictionaries</li>
+						<li>Accessing, modifying, and iterating through data structures</li>
+						<li>Mini-project: Build a mini shopping cart program</li>
+					</ul>
+				</div>
+
+				<div class="week-card">
+					<h3>Week 7: Simple Game Development</h3>
+					<ul>
+						<li>Understanding game loops and player input</li>
+						<li>Using Python's random module for unpredictability</li>
+						<li>Mini-project: Create a simple Rock-Paper-Scissors game</li>
+					</ul>
+				</div>
+
+				<div class="week-card">
+					<h3>Week 8: Capstone Project</h3>
+					<ul>
+						<li>Plan and create your own small Python project</li>
+						<li>Example projects:
+							<ul>
+								<li>A basic text-based adventure game</li>
+								<li>A simple quiz program</li>
+								<li>A mini calculator or interactive story</li>
+							</ul>
+						</li>
+						<li>Presentation of projects and celebration!</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 1000px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.course-content {
+		background: rgba(255, 255, 255, 0.1);
+		padding: 2rem;
+		border-radius: 8px;
+	}
+	h2 {
+		color: rgb(var(--accent-light));
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	.week-grid {
+		display: grid;
+		gap: 2rem;
+	}
+	.week-card {
+		background: rgba(255, 255, 255, 0.05);
+		padding: 1.5rem;
+		border-radius: 8px;
+		transition: transform 0.2s;
+	}
+	.week-card:hover {
+		transform: translateY(-5px);
+	}
+	.week-card h3 {
+		color: rgb(var(--accent-light));
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
+	}
+	ul {
+		margin-left: 1.5rem;
+	}
+	ul ul {
+		margin-left: 2rem;
+		margin-top: 0.5rem;
+	}
+</style>

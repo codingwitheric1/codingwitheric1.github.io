@@ -1,0 +1,104 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogStyles from '../../components/BlogStyles.astro';
+---
+
+<Layout title="Getting Started with Python - Coding with Eric">
+    <BlogStyles />
+    <main>
+        <h1 class="blog-title">Getting Started with <span class="text-gradient">Python</span></h1>
+        <div class="blog-content">
+            <p>Here's a step-by-step guide to set up Python on your computer:</p>
+
+            <div class="blog-section">
+                <h3>Step 1: Download Python</h3>
+                <ol>
+                    <li>Go to the official Python website: <a href="https://www.python.org" target="_blank" class="external-link">python.org</a></li>
+                    <li>Click on the <strong>Downloads</strong> tab
+                        <ul>
+                            <li>The website will suggest the best version for your operating system (Windows, macOS, or Linux)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="blog-section">
+                <h3>Step 2: Install Python</h3>
+                <h4>For Windows:</h4>
+                <ol>
+                    <li>Open the downloaded file (<code>python-[version].exe</code>)</li>
+                    <li>Check the box <strong>"Add Python to PATH"</strong> (important)</li>
+                    <li>Click <strong>Install Now</strong> and follow the prompts</li>
+                </ol>
+
+                <h4>For macOS:</h4>
+                <ol>
+                    <li>Open the downloaded <code>.pkg</code> file</li>
+                    <li>Follow the installation instructions</li>
+                    <li>Open the terminal and type <code>python3 --version</code> to confirm installation</li>
+                </ol>
+
+                <h4>For Linux:</h4>
+                <ol>
+                    <li>Open a terminal and type:
+                        <div class="code-block">
+                            sudo apt update<br>
+                            sudo apt install python3
+                        </div>
+                    </li>
+                    <li>Confirm installation by typing:
+                        <div class="code-block">
+                            python3 --version
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="blog-section">
+                <h3>Step 3: Install an IDE or Text Editor</h3>
+                <p>Choose a tool to write and test Python code. Popular options include:</p>
+                <ul>
+                    <li><strong>IDLE</strong> (comes with Python)</li>
+                    <li><strong>VS Code</strong>: Download from <a href="https://code.visualstudio.com" target="_blank" class="external-link">code.visualstudio.com</a></li>
+                    <li><strong>PyCharm</strong>: Download from <a href="https://www.jetbrains.com/pycharm" target="_blank" class="external-link">jetbrains.com/pycharm</a></li>
+                </ul>
+            </div>
+
+            <div class="blog-section">
+                <h3>Step 4: Test Your Python Setup</h3>
+                <ol>
+                    <li>Open your terminal or IDE</li>
+                    <li>Type:
+                        <div class="code-block">
+                            print("Hello, World!")
+                        </div>
+                    </li>
+                    <li>If you see "Hello, World!" on the screen, your setup is complete!</li>
+                </ol>
+            </div>
+
+            <p>Now you're ready to start coding in Python! 🎉</p>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    main {
+        margin: auto;
+        padding: 1rem;
+        color: white;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+    }
+    h4 {
+        color: rgb(var(--accent-light));
+        margin: 1rem 0 0.5rem;
+    }
+</style>
